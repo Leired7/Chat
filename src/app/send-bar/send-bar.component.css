@@ -1,0 +1,40 @@
+:host {
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+
+  width: 100%;
+}
+
+input {
+  flex-grow: 1;
+
+  background-color: var(--color-beige);
+  color: var(--color-black);
+
+  border: 0;
+  padding: calc(var(--small-size) * 3);
+
+  font-size: max(1rem, 16px);
+}
+
+button {
+  border: 0;
+  padding: calc(var(--small-size) * 3) calc(var(--small-size) * 6);
+
+  background-color: var(--color-blue);
+
+  font-size: max(1rem, 16px);
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
