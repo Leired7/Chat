@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./fonts.css";
+
+:root {
+  /** SIZE **/
+  --small-size: 6px;
+
+  /** COLORS **/
+
+  --color-beige: rgb(246, 243, 234);
+  --color-red: rgb(249, 66, 58);
+  --color-blue: rgb(0, 160, 209);
+  --color-yellow: rgb(255, 222, 23);
+  --color-purple: rgb(33, 64, 154);
+  --color-green: rgb(0, 125, 100);
+  --color-black: rgb(12, 12, 10);
+  --color-white: rgb(255, 255, 255);
+
+  /** TYPOGRAPHY **/
+  --font-family: "Renner";
+}
+
+/** GENERAL STYLES **/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-beige);
+  font-family: "Renner";
+}
