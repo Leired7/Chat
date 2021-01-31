@@ -1,0 +1,46 @@
+:host {
+}
+
+.message {
+  margin: var(--small-size) 0 0 var(--small-size);
+  padding: calc(var(--small-size) * 2);
+  max-width: fit-content;
+
+  background-color: var(--color-green);
+  color: var(--color-white);
+
+  font-size: max(1.2rem, 19px);
+}
+
+.send-bar {
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+
+  width: 100%;
+}
+
+.send-bar input {
+  flex-grow: 1;
+
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+
+  border: 0;
+  padding: calc(var(--small-size) * 3);
+
+  font-size: max(1rem, 16px);
+}
+
+.send-bar button {
+  border: 0;
+  padding: calc(var(--small-size) * 3) calc(var(--small-size) * 6);
+
+  background-color: var(--color-blue);
+
+  font-size: max(1rem, 16px);
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
