@@ -1,5 +1,17 @@
-<p class="message">mensaje</p>
+<p
+  *ngFor="let message of arrrayOfMessages; let i = index"
+  [ngClass]="i % 2 === 0 ? 'left' : 'right'"
+  class="message"
+>
+  {{ message }}
+</p>
 <div class="send-bar">
-  <input type="text" autofocus />
-  <button type="button">Enviar</button>
+  <input
+    type="text"
+    [placeholder]="emptyInput"
+    autofocus
+    [(ngModel)]="inputValue"
+    (keydown.enter)="sendMessage()"
+  />
+  <button type="button" (click)="sendMessage()">Enviar</button>
 </div>
