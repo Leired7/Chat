@@ -1,48 +1,63 @@
 :host {
   --message-font-size: max(1.2rem, 19px);
 
-  --hour-padding: var(--small-size) 0 0 0;
+  --hour-padding: var(--small-size);
   --hour-font-size: 0.8rem;
   --hour-font-style: italic;
 
   display: grid;
 }
 
+.message,
+span {
+  margin: var(--small-size);
+}
+
 .message {
+  position: relative;
+
   display: grid;
 
-  margin: var(--small-size);
   padding: calc(var(--small-size) * 2);
   max-width: fit-content;
 
-  color: var(--color-white);
+  color: var(--color-beige);
 
   font-size: var(--message-font-size);
 }
 
 .message > span {
   padding: var(--hour-padding);
+  width: fit-content;
 
-  text-align: end;
+  background-color: var(--color-blue);
 
   font-size: var(--hour-font-size);
   font-style: var(--hour-font-style);
-  color: var(--color-beige);
+  color: var(--color-black);
 }
 
-/* .message > span::before {
-  content: "·";
-  color: powderblue;
-  position: relative;
-  right: calc(var(--small-size));
-} */
-
 .left {
+  border-bottom-left-radius: calc(var(--small-size) * 4);
+
   background-color: var(--color-green);
+}
+
+.left > span {
+  position: absolute;
+  top: 2px;
+  right: -41px;
 }
 
 .right {
   place-self: end;
+  border-bottom-right-radius: calc(var(--small-size) * 4);
 
   background-color: var(--color-purple);
+}
+
+.right > span {
+  position: absolute;
+  top: 2px;
+  left: -41px;
 }

@@ -15,7 +15,7 @@
 input {
   flex-grow: 1;
 
-  background-color: var(--color-beige);
+  background-color: var(--color-yellow);
   color: var(--color-black);
 
   border: 0;
