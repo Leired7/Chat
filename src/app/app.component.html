@@ -1,17 +1,6 @@
-<p
-  *ngFor="let message of arrrayOfMessages; let i = index"
-  [ngClass]="i % 2 === 0 ? 'left' : 'right'"
-  class="message"
->
-  {{ message }}
-</p>
-<div class="send-bar">
-  <input
-    type="text"
-    [placeholder]="emptyInput"
-    autofocus
-    [(ngModel)]="inputValue"
-    (keydown.enter)="sendMessage()"
-  />
-  <button type="button" (click)="sendMessage()">Enviar</button>
-</div>
+<bau-messages [inputMessagesFromApp]="arrayMessagesInApp"></bau-messages>
+
+<bau-send-bar
+  buttonText="Enviar"
+  (outputActionButton)="sendMessageFromAppToMessagesComponent($event)"
+></bau-send-bar>
