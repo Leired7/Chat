@@ -1,0 +1,14 @@
+<input
+  type="text"
+  [placeholder]="inputValue === undefined ? emptyInput : ''"
+  autofocus
+  [(ngModel)]="inputValue"
+  (keydown.enter)="sendMessageToApp()"
+/>
+<button
+  type="button"
+  (click)="sendMessageToApp()"
+  [ngClass]="inputValue !== undefined ? 'show' : 'hide'"
+>
+  {{ buttonText }}
+</button>
