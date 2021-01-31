@@ -28,6 +28,6 @@
 }
 
 body {
-  background-color: var(--color-beige);
+  background-image: url("./assets/img/halftone-yellow.png");
   font-family: "Renner";
 }
