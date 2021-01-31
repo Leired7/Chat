@@ -7,4 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class MessagesComponent {
   @Input() public inputMessagesFromApp: string[] = [];
+
+  public date: Date = new Date();
+  public hour: string = this.date.getHours().toLocaleString();
+  public minute: string = this.date.getMinutes().toLocaleString();
+
+  public sendTime = `${this.hour}:${
+    this.minute.length == 1 ? `0${this.minute}` : `${this.minute}`
+  }`;
 }

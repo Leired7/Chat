@@ -1,15 +1,41 @@
 :host {
+  --message-font-size: max(1.2rem, 19px);
+
+  --hour-padding: var(--small-size) 0 0 0;
+  --hour-font-size: 0.8rem;
+  --hour-font-style: italic;
+
   display: grid;
 }
+
 .message {
+  display: grid;
+
   margin: var(--small-size);
   padding: calc(var(--small-size) * 2);
   max-width: fit-content;
 
   color: var(--color-white);
 
-  font-size: max(1.2rem, 19px);
+  font-size: var(--message-font-size);
 }
+
+.message > span {
+  padding: var(--hour-padding);
+
+  text-align: end;
+
+  font-size: var(--hour-font-size);
+  font-style: var(--hour-font-style);
+  color: var(--color-beige);
+}
+
+/* .message > span::before {
+  content: "·";
+  color: powderblue;
+  position: relative;
+  right: calc(var(--small-size));
+} */
 
 .left {
   background-color: var(--color-green);

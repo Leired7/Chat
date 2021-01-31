@@ -1,7 +1,6 @@
-<p
-  class="message"
-  *ngFor="let message of inputMessagesFromApp; let i = index"
-  [ngClass]="i % 2 === 0 ? 'left' : 'right'"
->
-  {{ message }}
-</p>
+<ng-container *ngFor="let message of inputMessagesFromApp; let i = index">
+  <p class="message" [ngClass]="i % 2 === 0 ? 'left' : 'right'">
+    {{ message }}
+    <span>{{ sendTime }}</span>
+  </p>
+</ng-container>
