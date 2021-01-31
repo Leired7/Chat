@@ -1,17 +1,26 @@
 :host {
+  display: flex;
+  flex-direction: column;
 }
-
 .message {
-  margin: var(--small-size) 0 0 var(--small-size);
+  margin: var(--small-size);
   padding: calc(var(--small-size) * 2);
   max-width: fit-content;
 
-  background-color: var(--color-green);
   color: var(--color-white);
 
   font-size: max(1.2rem, 19px);
 }
 
+.left {
+  background-color: var(--color-green);
+}
+
+.right {
+  align-self: end;
+
+  background-color: var(--color-purple);
+}
 .send-bar {
   position: fixed;
   bottom: 0;
