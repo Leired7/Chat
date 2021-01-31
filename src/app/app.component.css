@@ -1,17 +1,23 @@
 :host {
   position: relative;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 60px);
 }
 
 .background {
   position: absolute;
   z-index: -1;
-  opacity: 0.6;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: calc(100vh - 60px);
+  width: 100vw;
+}
+
+.figure01,
+.figure02 {
+  opacity: 0.2;
 }
 
 .figure01 {
