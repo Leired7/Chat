@@ -1,4 +1,9 @@
 :host {
+  --input-font-size: max(1rem, 16px);
+
+  --button-font-size: max(1rem, 16px);
+  --button-font-weight: bold;
+
   position: fixed;
   bottom: 0;
 
@@ -16,7 +21,7 @@ input {
   border: 0;
   padding: calc(var(--small-size) * 3);
 
-  font-size: max(1rem, 16px);
+  font-size: var(--input-font-size);
 }
 
 button {
@@ -25,9 +30,9 @@ button {
 
   background-color: var(--color-blue);
 
-  font-size: max(1rem, 16px);
+  font-size: var(--button-font-size);
   line-height: 1;
-  font-weight: bold;
+  font-weight: var(--button-font-weight);
   letter-spacing: 0.1em;
 }
 
