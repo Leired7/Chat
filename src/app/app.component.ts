@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  public message: string;
+  public arrrayOfMessages: string[] = [];
+
+  public inputValue: string;
+  public emptyInput: string = 'Mensaje';
+
+  public sendMessage() {
+    this.arrrayOfMessages = [...this.arrrayOfMessages, this.inputValue];
+
+    this.inputValue = '';
+  }
 }
