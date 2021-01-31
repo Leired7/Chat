@@ -1,0 +1,22 @@
+:host {
+  display: grid;
+}
+.message {
+  margin: var(--small-size);
+  padding: calc(var(--small-size) * 2);
+  max-width: fit-content;
+
+  color: var(--color-white);
+
+  font-size: max(1.2rem, 19px);
+}
+
+.left {
+  background-color: var(--color-green);
+}
+
+.right {
+  place-self: end;
+
+  background-color: var(--color-purple);
+}
