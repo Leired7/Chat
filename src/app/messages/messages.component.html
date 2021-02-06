@@ -1,6 +1,6 @@
 <ng-container *ngFor="let message of inputMessagesFromApp; let i = index">
   <p class="message" [ngClass]="i % 2 === 0 ? 'left' : 'right'">
-    {{ message }}
+    {{ message | mimimi }}
     <span>{{ sendTime }}</span>
   </p>
 </ng-container>

@@ -5,11 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  public arrayMessagesInApp: string[] = [];
-
-  public sendMessageFromAppToMessagesComponent(incommingMessage: string) {
-    if (incommingMessage !== '')
-      this.arrayMessagesInApp = [...this.arrayMessagesInApp, incommingMessage];
-  }
-}
+export class AppComponent {}

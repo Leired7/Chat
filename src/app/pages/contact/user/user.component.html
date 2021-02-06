@@ -1,0 +1,6 @@
+<div *ngFor="let user of arrayUserFromApp">
+  <figure>
+    <img [src]="user.picture.thumbnail" alt="" />
+    <figcaption>{{ user.name.first }}</figcaption>
+  </figure>
+</div>

@@ -1,0 +1,6 @@
+<bau-messages [inputMessagesFromApp]="arrayMessagesInApp"></bau-messages>
+
+<bau-send-bar
+  buttonText="Enviar"
+  (outputActionButton)="sendMessageFromAppToMessagesComponent($event)"
+></bau-send-bar>

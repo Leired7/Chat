@@ -3,9 +3,7 @@
   <div class="figure02"></div>
 </div>
 
-<bau-messages [inputMessagesFromApp]="arrayMessagesInApp"></bau-messages>
-
-<bau-send-bar
-  buttonText="Enviar"
-  (outputActionButton)="sendMessageFromAppToMessagesComponent($event)"
-></bau-send-bar>
+<bau-user [arrayUserFromApp]="arrayUsersInApp"></bau-user>
+<main>
+  <router-outlet></router-outlet>
+</main>
